@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ms-express</title>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Google Cairo Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap Grid Css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+        <!-- Remix Icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="home-index layout-wrapper">
+        <!-- Start Header -->
+        <header class="header header-fixed" id="header-wrapper">
+            <div class="header-container">
+                <div class="header-mobile">
+                    <button class="btn btn-icon b-slide-out"><i class="ri-menu-line"></i></button>
+                </div>
+                <div class="header-brand">
+                    <a href="#" class="brand"
+                        ><span class="brand-logo"><img src="assets/images/brand/logo.png" alt="logo" /></span
+                    ></a>
+                </div>
+                <div class="header-navbar">
+                    <nav class="navbar" id="nav-wrapper">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">الرئيسية</a></li>
+                            <li class="nav-item has-childe">
+                                <a href="#" class="nav-link">تتبع الشحنات</a>
+                                <ul class="childe-list">
+                                    <li><a href="#">تتبع الشحنات</a></li>
+                                    <li><a href="#">التتبع المتقدم</a></li>
+                                    <li><a href="#">جميع الشحنات</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-childe">
+                                <a href="#" class="nav-link">أرسل الشحنات</a>
+                                <ul class="childe-list">
+                                    <li><a href="#">خدمات الشحن</a></li>
+                                    <li><a href="#">النقل السريع</a></li>
+                                    <li><a href="#">أسعار الشحن</a></li>
+                                    <li><a href="#">إعداد الشحنات</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-childe">
+                                <a href="#" class="nav-link">المساعدة والدعم</a>
+                                <ul class="childe-list">
+                                    <li><a href="#">إتصل بنا</a></li>
+                                    <li><a href="#">دعم العملاء</a></li>
+                                    <li><a href="#">عنوان المكتب</a></li>
+                                    <li><a href="#">الأسئلة الشائعة</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">المدونة</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-account">
+                    <a href="/login.html" class="btn open-account">تسجيل الدخول</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dropdown Slideout -->
+        <div class="mobile-sidenav menu-modern" id="slide-out">
+            <div class="sidenav-header"></div>
+            <ul class="mobile-nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="ri-home-4-line"></i>
+                        <span class="menu-title text-truncate">الرئيسية</span>
+                    </a>
+                </li>
+                <li class="nav-item has-childe">
+                    <a href="#" class="nav-link">
+                        <i class="ri-folder-2-line"></i>
+                        <span class="menu-title text-truncate">تتبع الشحنات</span>
+                    </a>
+                    <ul class="mobile-childe-list">
+                        <li>
+                            <a href="#">
+                                <i <i class="ri-record-circle-line"></i>
+                                <span class="menu-title text-truncate">تتبع الشحنات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-record-circle-line"></i>
+                                <span class="menu-title text-truncate">التتبع المتقدم</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-record-circle-line"></i>
+                                <span class="menu-title text-truncate">جميع الشحنات</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-childe">
+                    <a href="#" class="nav-link">
+                        <i class="ri-folder-2-line"></i>
+                        <span class="menu-title text-truncate">أرسل الشحنات</span>
+                    </a>
+                    <ul class="mobile-childe-list">
+                        <li><a href="#">خدمات الشحن</a></li>
+                        <li><a href="#">النقل السريع</a></li>
+                        <li><a href="#">أسعار الشحن</a></li>
+                        <li><a href="#">إعداد الشحنات</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-childe">
+                    <a href="#" class="nav-link">
+                        <i class="ri-folder-2-line"></i>
+                        <span class="menu-title text-truncate">المساعدة والدعم</span>
+                    </a>
+                    <ul class="mobile-childe-list">
+                        <li><a href="#">إتصل بنا</a></li>
+                        <li><a href="#">دعم العملاء</a></li>
+                        <li><a href="#">عنوان المكتب</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="ri-article-line"></i>
+                        <span class="menu-title text-truncate">المدونة</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- End Header -->
+        <div class="main-outer">
+            <!-- Banner Section -->
+            <section class="section banner-section">
+                <div class="container">
+                    <div class="banner-section-inner">
+                        <div>
+                            <h1 class="banner-section-title">لوحة تحكم واحدة لجميع احتياجات الشحن الخاصة بك</h1>
+                        </div>
+                        <div>
+                            <p class="banner-section-description">
+                                نحن نمكّن الشركات من أتمتة خدماتها اللوجستية وزيادة كفاءة الشحن من خلال توفير منصة نافذة واحدة متكاملة مع
+                                شركات نقل متعددة
+                            </p>
+                        </div>
+                        <div class="banner-section-track track-wrapper">
+                            <form action="#" class="banner-section-form" id="track-form">
+                                <input
+                                    type="text"
+                                    class="banner-section-input track-input"
+                                    id="tarck-input"
+                                    placeholder="أكتب رقم التتبع الخاص بك"
+                                />
+                                <button type="submit" class="btn btn-theme-color banner-section-button" id="tarck-submit">
+                                    تتبع الشحنة
+                                </button>
+                            </form>
+                        </div>
+                        <!-- <div class="table-responsive my-5 bg-white shadow-md rounded">
+                            <table class="table-track">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="fw-normal border-bottom text-muted py-4 px-2" style="min-width: 150px;">الرقم التعريفي</th>
+                                        <th scope="col" class="fw-normal border-bottom text-muted py-4 px-2" style="min-width: 150px;">التكلفة</th>
+                                        <th scope="col" class="fw-normal border-bottom text-muted py-4 px-2" style="min-width: 150px;">من مدينة</th>
+                                        <th scope="col" class="fw-normal border-bottom text-muted py-4 px-2" style="min-width: 150px;">حالة الشحنة</th>
+                                        <th scope="col" class="fw-normal border-bottom text-muted py-4 px-2" style="min-width: 150px;">تاريخ الإستلام</th>
+                                        <th scope="col" class="fw-normal border-bottom text-muted py-4 px-2" style="min-width: 100px;">تعديل</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="py-3 px-2">MS-752362</th>
+                                        <th class="py-3 px-2">320.ج</th>
+                                        <th class="py-3 px-2">القاهرة</th>
+                                        <th class="py-3 px-2">قيد التسليم</th>
+                                        <th class="py-3 px-2">2022-3-19</th>
+                                        <th class="py-3 px-2"><a href="#" class="btn btn-sm btn-theme-color">تعديل</a></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feature Section  -->
+            <section class="section feature-section py-5">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6">
+                            <div class="feature-holder p-3">
+                                <div class="translate-left-75">
+                                    <img src="assets/images/screen/about2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-content">
+                                <div class="content-holder has-animation active-animation">
+                                    <div class="translate-bottom-75 mb-3">
+                                        <h2 class="h2 text-black font-bold item-title">شركة حصرية للتكنولوجيا تقدم حلول لك</h2>
+                                    </div>
+                                    <div class="translate-bottom-75">
+                                        <p class="font-size-4 text-black">لوريم إيبسوم (Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                    </div>
+                                    <div class="translate-bottom-75 mb-4">
+                                        <ul class="list-item">
+                                            <li>سهولة التحكم وإستخدام الموقع من جميع الأجهزة</li>
+                                            <li>واجهة مستخدم محسنة وتعمل بديناميكية التحديث</li>
+                                            <li>تتبع وإدارة جميع شحناتك من صفحة واحدة</li>
+                                            <li>إمكانية تخصيص لوحة التحكم لتناسب ما تريد</li>
+                                            <li>حماية جميع معلوماتك وبيناتك لدينا وجعلها مشفرة</li>
+                                        </ul>
+                                    </div>
+                                    <div class="translate-bottom-75">
+                                        <a href="#" class="btn btn-xl btn-theme-color">أعرف أكثر<i class="ri-arrow-left-s-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="position-relative">
+                <div class="shape-divider shape-divider-bottom shape-divider-fluid-x">
+                    <svg class="shape-svg" viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <section class="section counters-section section-primary">
+                <div class="container py-5">
+                    <div class="position-relative text-center mb-5">
+                        <h2 class="h2 text-white">يعتمد مئات العملاء علي MS Express</h2>
+                        <p class="text-white my-3">قد تكون هذه الإحصائيات المذهلة خاطئة ، فالعديد من العملاء السعداء حول جميع المحافظات يثقون في خدمتنا لتعزيز منتجاتهم</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-3 text-center text-white">
+                            <i data-feather="box" width="36" height="36"></i>
+                            <p class="counter font-bold font-size-5 my-1">543</p>
+                            <p class="m-0 font-bold font-size-4">الشحنات المكتملة</p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-white">
+                            <i data-feather="anchor" width="36" height="36"></i>
+                            <p class="counter font-bold font-size-5 my-1">15372</p>
+                            <p class="m-0 font-bold font-size-4">المتابعون</p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-white">
+                            <i data-feather="users" width="36" height="36"></i>
+                            <p class="counter font-bold font-size-5 my-1">158</p>
+                            <p class="m-0 font-bold font-size-4">العملاء الدائمون</p>
+                        </div>
+                        <div class="col-6 col-md-3 text-center text-white">
+                            <i data-feather="box" width="36" height="36"></i>
+                            <p class="counter font-bold font-size-5 my-1">23</p>
+                            <p class="m-0 font-bold font-size-4">المركبات المملوكة</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="position-relative">
+                <div class="shape-divider shape-divider-bottom shape-divider-fluid-x text-contrast">
+                    <svg class="shape-svg" viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <!-- Features Section -->
+            <section class="section feature-section">
+                <div class="container pt-0">
+                    <div class="bg-white shadow-md rounded p-5">
+                        <div class="row gap-y">
+                            <div class="col-md-4">
+                                <div class="icon icon-xl icon-primary icon-shadow rounded me-3">
+                                    <i data-feather="pen-tool" width="36" height="36"></i>
+                                </div>
+                                <h4 class="h4 text-black font-bold mt-4">سهولة الأستخدام</h4>
+                                <p class="text-muted mt-4">هيكل أسلوبنا المذهل يجعل عملية التخصيص الخاصة بك في غاية السهولة </p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon icon-xl icon-primary icon-shadow rounded me-3">
+                                    <i data-feather="truck" width="36" height="36"></i>
+                                </div>
+                                <h4 class="h4 text-black font-bold mt-4">توصيل سريع و أمن</h4>
+                                <p class="text-muted mt-4">تمتع بأفضل تجربة أمان و سرعة شحن وتصويل علي مستوي مصر</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon icon-xl icon-primary icon-shadow rounded me-3">
+                                    <i data-feather="pen-tool" width="36" height="36"></i>
+                                </div>
+                                <h4 class="h4 text-black font-bold mt-4">سهولة المتابعة</h4>
+                                <p class="text-muted mt-4">نظام تتبع متقدم يمنحك تتبع جميع شحناتك لحظة بالحظة وسهولة تعديلها</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section APP Download -->
+            <section class="section app-download">
+                <div class="container">
+                    <div class="section-primary py-5 rounded shadow-lg">
+                        <div class="position-relative text-center">
+                            <div class="section-header">
+                                <span class="badge bg-white text-black rounded-pill shadow-sm bold py-2 px-4">إبدأ يومك</span>
+                                <h2 class="text-white font-size-5 text-bold my-3">قم بتنزيل التطبيق</h2>
+                            </div>
+                            <div class="d-flex justify-content-center my-5">
+                                <a href="#" class="btn-dark btn-download btn-download-apple rounded-pill">
+                                    <img src="assets/images/icons/apple.svg" class="ms-3 w-28" alt="icon">
+                                    <p class="me-0 mb-0">
+                                        <span class="font-size-2 text-bold d-block">تحميل الأن</span>
+                                        <span class="font-size-3 text-bolder">App Store</span>
+                                    </p>
+                                </a>
+                                <a href="#" class="btn-white btn-download btn-downlaod-google rounded-pill">
+                                    <img src="assets/images/icons/google-play.svg" class="ms-3 w-28" alt="icon">
+                                    <p class="me-0 mb-0">
+                                        <span class="font-size-2 text-bold d-block">تحميل الأن</span>
+                                        <span class="font-size-3 text-bolder">Google Play</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- common questions -->
+            <section class="accordion-section my-5">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="text-black">الأسئلة الشائعة</h2>
+                    </div>
+                    <div class="accordion-list">
+                        <!-- Question 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button d-flex justify-content-between align-items-center">
+                                <span class="accordion-header-title">كيف يمكنني تتبع شحناتي الأخيرة ؟</span>
+                                <span class="accordion-header-icon"><i data-feather="chevron-left"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="accordion-content-text">يمكنك تتبع شحنتك في أي وقت باستخدام أداة التتبع عبر الإنترنت الموجودة على موقعنا</p>
+                            </div>
+                        </div>
+                        <!-- Question 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button d-flex justify-content-between align-items-center">
+                                <span class="accordion-header-title">ما الطرق المتاحة لتسديد رسوم الخدمة ؟</span>
+                                <span class="accordion-header-icon"><i data-feather="chevron-left"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="accordion-content-text">
+                                    1. يمكنك الدفع نقدًا لعمليات الاستلام التي تم تحديد موعد لها عبر الإنترنت <br>
+                                    2. يمكنك زيارة أي من منافذنا والدفع ببطاقة الائتمان (Visa أو MasterCard) <br>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Question 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button d-flex justify-content-between align-items-center">
+                                <span class="accordion-header-title">هل معلوماتي الشخصية آمنة لدى إم أس إكسبريس ؟</span>
+                                <span class="accordion-header-icon"><i data-feather="chevron-left"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="accordion-content-text">تلتزم أم إس إكسبريس بمبدأ سرية المعلومات وتأخذه على محمل الجد. كما تأخذ الشركة على عاتقها ضمان أن كافة المعلومات الشخصية (مثل تفاصيل الهوية، وعناوين الشوارع أو البريد الإلكتروني، وأرقام الهواتف، أو أي معلومات أخرى مسجلة على موقعنا الإلكتروني) لن تتم مشاركتها أو تقديمها إلى أي شخص أو شركة أو كيان.</p>
+                            </div>
+                        </div>
+                        <!-- Question 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-button d-flex justify-content-between align-items-center">
+                                <span class="accordion-header-title">ما هي خدمة الشحن من إم أس إكسبريس ؟</span>
+                                <span class="accordion-header-icon"><i data-feather="chevron-left"></i></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="accordion-content-text">هي خدمة لنقل الشحنات بأوزان إجمالية تزيد على 50 كيلوجرام، والتي تتطلب المزيد من إجراءات المناولة والتي تكون في الغالب غير مستعجلة بالمقارنة مع الشحنات السريعة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="section footer-site">
+                <div class="container py-4 text-center">
+                    <div class="footer-brand"><img src="assets/images/brand/logo.png" alt=""></div>
+                    <div class="lead text-white font-size-4 text-bold mt-5">لا تنتظر - <span class="text-bold">احصل علي MS Express</span> الأن!</div>
+                    <p class="copyright text-white font-size-3 mt-3">جميع الحقوق محفوظة © 2022 لـ <a href="#" class="text-primary font-size-4 text-bold">MS Express</a></p>
+                </div>
+            </footer>
+        </div>
+        <div class="overlay-layout"></div>
+        <!-- Feather Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ms-express</title>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Google Cairo Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Bootstrap Grid Css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+        <!-- Remix Icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body class="home-index layout-wrapper">
+        <!-- Start Header -->
+        <header class="header header-fixed" id="header-wrapper">
+            <div class="header-container">
+                <div class="header-mobile">
+                    <button class="btn btn-icon b-slide-out"><i class="ri-menu-line"></i></button>
+                </div>
+                <div class="header-brand">
+                    <a href="#" class="brand"
+                        ><span class="brand-logo"><img src="assets/images/brand/logo.png" alt="logo" /></span
+                    ></a>
+                </div>
+                <div class="header-navbar">
+                    <nav class="navbar" id="nav-wrapper">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">الرئيسية</a></li>
+                            <li class="nav-item has-childe">
+                                <a href="#" class="nav-link">تتبع الشحنات</a>
+                                <ul class="childe-list">
+                                    <li><a href="#">تتبع الشحنات</a></li>
+                                    <li><a href="#">التتبع المتقدم</a></li>
+                                    <li><a href="#">جميع الشحنات</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-childe">
+                                <a href="#" class="nav-link">أرسل الشحنات</a>
+                                <ul class="childe-list">
+                                    <li><a href="#">خدمات الشحن</a></li>
+                                    <li><a href="#">النقل السريع</a></li>
+                                    <li><a href="#">أسعار الشحن</a></li>
+                                    <li><a href="#">إعداد الشحنات</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-childe">
+                                <a href="#" class="nav-link">المساعدة والدعم</a>
+                                <ul class="childe-list">
+                                    <li><a href="#">إتصل بنا</a></li>
+                                    <li><a href="#">دعم العملاء</a></li>
+                                    <li><a href="#">عنوان المكتب</a></li>
+                                    <li><a href="#">الأسئلة الشائعة</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">المدونة</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-account">
+                    <a href="/login.html" class="btn open-account">تسجيل الدخول</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dropdown Slideout -->
+        <div class="mobile-sidenav menu-modern" id="slide-out">
+            <div class="sidenav-header"></div>
+            <ul class="mobile-nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="ri-home-4-line"></i>
+                        <span class="menu-title text-truncate">الرئيسية</span>
+                    </a>
+                </li>
+                <li class="nav-item has-childe">
+                    <a href="#" class="nav-link">
+                        <i class="ri-folder-2-line"></i>
+                        <span class="menu-title text-truncate">تتبع الشحنات</span>
+                    </a>
+                    <ul class="mobile-childe-list">
+                        <li>
+                            <a href="#">
+                                <i <i class="ri-record-circle-line"></i>
+                                <span class="menu-title text-truncate">تتبع الشحنات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-record-circle-line"></i>
+                                <span class="menu-title text-truncate">التتبع المتقدم</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-record-circle-line"></i>
+                                <span class="menu-title text-truncate">جميع الشحنات</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-childe">
+                    <a href="#" class="nav-link">
+                        <i class="ri-folder-2-line"></i>
+                        <span class="menu-title text-truncate">أرسل الشحنات</span>
+                    </a>
+                    <ul class="mobile-childe-list">
+                        <li><a href="#">خدمات الشحن</a></li>
+                        <li><a href="#">النقل السريع</a></li>
+                        <li><a href="#">أسعار الشحن</a></li>
+                        <li><a href="#">إعداد الشحنات</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-childe">
+                    <a href="#" class="nav-link">
+                        <i class="ri-folder-2-line"></i>
+                        <span class="menu-title text-truncate">المساعدة والدعم</span>
+                    </a>
+                    <ul class="mobile-childe-list">
+                        <li><a href="#">إتصل بنا</a></li>
+                        <li><a href="#">دعم العملاء</a></li>
+                        <li><a href="#">عنوان المكتب</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="ri-article-line"></i>
+                        <span class="menu-title text-truncate">المدونة</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- End Header -->
+        <div class="main-outer">
+ 
+
+            <!-- Footer Section -->
+            <footer class="section footer-site">
+                <div class="container py-4 text-center">
+                    <div class="footer-brand"><img src="assets/images/brand/logo.png" alt=""></div>
+                    <div class="lead text-white font-size-4 text-bold mt-5">لا تنتظر - <span class="text-bold">احصل علي MS Express</span> الأن!</div>
+                    <p class="copyright text-white font-size-3 mt-3">جميع الحقوق محفوظة © 2022 لـ <a href="#" class="text-primary font-size-4 text-bold">MS Express</a></p>
+                </div>
+            </footer>
+        </div>
+        <div class="overlay-layout"></div>
+        <!-- Feather Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
